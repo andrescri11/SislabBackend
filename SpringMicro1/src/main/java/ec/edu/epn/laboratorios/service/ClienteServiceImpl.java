@@ -10,7 +10,6 @@ import ec.edu.epn.laboratorios.model.Cliente;
 
 @Service
 public class ClienteServiceImpl implements ClienteService{
-
 	@Autowired
 	private ClienteDAO dao;
 	
