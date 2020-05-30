@@ -13,7 +13,6 @@ import ec.edu.epn.laboratorios.model.Proforma;
 
 @Service
 public class ProformaServiceImpl implements ProformaService{
-
 	@Autowired
 	private ProformaDAO dao;
 

@@ -9,7 +9,6 @@ import ec.edu.epn.laboratorios.model.Metodo;
 import ec.edu.epn.laboratorios.model.Proforma;
 
 public interface ProformaService {
-
 	List<Proforma> getListarProf();
 	// Proforma ingresarProforma(Proforma proforma, String fechaActual, String representante);
 	Proforma ingresarProforma(Proforma proforma);
