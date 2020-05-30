@@ -10,7 +10,6 @@ import ec.edu.epn.laboratorios.model.CargosPersonal;
 
 @Service
 public class CargosPersonalServiceImpl implements CargosPersonalService{
-
 	@Autowired
 	private CargosPersonalDAO dao;
 

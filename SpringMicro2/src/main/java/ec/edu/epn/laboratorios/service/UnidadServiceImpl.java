@@ -18,7 +18,6 @@ public class UnidadServiceImpl implements UnidadService {
 		return dao.findAll();
 	}
 
-
 	@Override
 	public Unidad ingresarUnidad(Unidad unidad) {
 		return dao.save(unidad);
