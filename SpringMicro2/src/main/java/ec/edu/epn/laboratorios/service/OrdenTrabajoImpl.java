@@ -12,7 +12,6 @@ import ec.edu.epn.laboratorios.model.OrdenTrabajo;
 
 @Service
 public class OrdenTrabajoImpl implements OrdenTrabajoService {
-
 	@Autowired
 	private OrdenTrabajoDAO dao;
 	
