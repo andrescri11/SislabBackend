@@ -10,7 +10,6 @@ import ec.edu.epn.laboratorios.model.DetalleProforma;
 
 @Service
 public class DetalleProformaServiceImpl implements DetalleProformaService {
-
 	@Autowired 
 	private DetalleProformaDAO dao;
 

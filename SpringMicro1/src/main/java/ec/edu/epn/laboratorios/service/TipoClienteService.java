@@ -1,7 +1,5 @@
 package ec.edu.epn.laboratorios.service;
-
 import java.util.List;
-
 import ec.edu.epn.laboratorios.model.TipoCliente;
 
 public interface TipoClienteService {
