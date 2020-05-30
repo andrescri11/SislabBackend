@@ -7,4 +7,4 @@ spring:
 
 eureka:
  instance:
-   hostname: localhost	 
+   hostname: localhost
