@@ -1,0 +1,68 @@
+<h1 mat-dialog-title>Ingrese datos Muestra</h1>
+<div mat-dialog-content>
+        <div [hidden] = "true">
+            <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="muestra.id_muestra" placeholder="ID">
+            </mat-form-field>
+        </div>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="muestra.codigo_m_cliente" placeholder="Codigo Cliente">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.fecha_toma_m" placeholder="Fecha toma muestra">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.tipo_m" placeholder="Tipo muestra">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.origen_m" placeholder="Origen muestra">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.tipoenvase_m" placeholder="Tipo Envase" >
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.preservante_m" placeholder="Preservante">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.tipopreservante_m" placeholder="Tipo Preservante">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.refrigeracion_m" placeholder="Refrigeracion">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.aux_muestra" placeholder="Aux muestra">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.id_factura" placeholder="ID Factura">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.descr_m" placeholder="Descripcio">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.num_muestra_fact" placeholder="Numero de muestra">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.id_unidad" placeholder="ID unidad">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="data.id_ti" placeholder="ID TI">
+        </mat-form-field>
+</div> 
+<div mat-dialog-actions>
+    <button mat-button cdkFocusInitial (click)= "operar()" >Aceptar</button>
+    <button mat-button mat-dialog-close="false">Cancelar</button>
+</div>
