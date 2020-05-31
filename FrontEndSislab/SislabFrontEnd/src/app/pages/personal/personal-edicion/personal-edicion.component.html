@@ -1,0 +1,76 @@
+<h1 mat-dialog-title>Ingrese datos de Personal</h1>
+<div mat-dialog-content>
+        <div [hidden] = "true">
+            <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.id_personal" placeholder="ID">
+            </mat-form-field>
+        </div>
+
+        <mat-form-field class="example-full-width">
+            <mat-select placeholder="Tipo Personal" [(value)]="selected">
+                <mat-option *ngFor="let t of tp " [value]="t.id_tipopersonal">
+                    {{t.id_tipopersonal}} - {{t.nombre_tp}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field> 
+
+        <mat-form-field class="example-full-width">
+            <mat-select placeholder="Cargo Pesonal" [(value)]="selected">
+                <mat-option *ngFor="let c of cp " [value]="t.id_cargo">
+                    {{t.id_cargo}} - {{t.nombre_cp}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.cedula_pe" placeholder="Cedula">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.nombres_pe" placeholder="Nombre" >
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.direccion_pe" placeholder="Direccion" >
+        </mat-form-field>    
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.telefono_pe" placeholder="Telefono" >
+        </mat-form-field>    
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.email_pe" placeholder="Email" >
+        </mat-form-field>    
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.cargo_pe" placeholder="Cargo" >
+        </mat-form-field>    
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.tipo_pe" placeholder="Tipo" >
+        </mat-form-field>    
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.sueldo_pe" placeholder="Sueldo" >
+        </mat-form-field>    
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.fechaing_pe" placeholder="Fecha de Ingreso" >
+        </mat-form-field>    
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.fechafin_pe" placeholder="Fecha Fin" >
+        </mat-form-field>    
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.aux_idpersonal" placeholder="Aux ID personal" >
+        </mat-form-field>    
+
+        <mat-form-field class="example-full-width">
+                <input matInput [(ngModel)]="personal.unidad" placeholder="Unidad" >
+        </mat-form-field>    
+</div> 
+<div mat-dialog-actions>
+    <button mat-button cdkFocusInitial (click)= "operar()" >Aceptar</button>
+    <button mat-button mat-dialog-close="false">Cancelar</button>
+</div>
